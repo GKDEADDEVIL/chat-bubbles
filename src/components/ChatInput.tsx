@@ -74,8 +74,8 @@ export const ChatInput: React.FC = () => {
               className="w-full"
               style={{ maxWidth: `${maxBubbleWidth}px` }}
             >
-              
-              //Comment or uncomment the following block to show the user icon
+
+              {/* //Comment or uncomment the following block to show the user icon */}
               <div 
                 className="inline-block px-4 py-2 rounded-3xl rounded-bl-lg bg-opacity-50"
                 style={{ 
@@ -95,7 +95,7 @@ export const ChatInput: React.FC = () => {
                 </p>
               </div>
 
-              // Uncomment the following block to show typing dots
+              {/* // Uncomment the following block to show typing dots */}
               {/* <div
                 className="inline-block px-4 py-4 rounded-3xl rounded-bl-lg bg-opacity-50"
                 style={{
