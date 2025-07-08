@@ -76,7 +76,7 @@ export const ChatInput: React.FC = () => {
             >
 
               {/* //Comment or uncomment the following block to show the user icon */}
-              <div 
+              {/* <div 
                 className="inline-block px-4 py-2 rounded-3xl rounded-bl-lg bg-opacity-50"
                 style={{ 
                   backgroundColor: colors.bubbleColor,
@@ -93,10 +93,10 @@ export const ChatInput: React.FC = () => {
                 >
                   {inputText}
                 </p>
-              </div>
+              </div> */}
 
               {/* // Uncomment the following block to show typing dots */}
-              {/* <div
+              <div
                 className="inline-block px-4 py-4 rounded-3xl rounded-bl-lg bg-opacity-50"
                 style={{
                   backgroundColor: colors.bubbleColor,
@@ -120,7 +120,7 @@ export const ChatInput: React.FC = () => {
                     aria-hidden
                   />
                 </div>
-              </div> */}
+              </div>
 
             </motion.div>
           )}

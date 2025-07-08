@@ -30,7 +30,7 @@ export const ChatBubble: React.FC<ChatBubbleProps> = ({ message }) => {
     >
       {/* User Icon */}
       <motion.img
-        src="/icon.png"
+        src="/icon2.png"
         alt="User"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
