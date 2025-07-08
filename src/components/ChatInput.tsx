@@ -45,7 +45,7 @@ export const ChatInput: React.FC = () => {
         backgroundColor: colors.backgroundColor,
         paddingTop: !showPreviewDivider && previewStartsAtTop ? "0" : undefined,
       }}
-    >
+    > 
       <div
         className={`p-4 ${
           isBottomAligned ? "min-h-[100px]" : ""
@@ -75,6 +75,7 @@ export const ChatInput: React.FC = () => {
               style={{ maxWidth: `${maxBubbleWidth}px` }}
             >
 
+              {/* //Comment or uncomment the following block to show the user icon */}
               {/* //Comment or uncomment the following block to show the user icon */}
               {/* <div 
                 className="inline-block px-4 py-2 rounded-3xl rounded-bl-lg bg-opacity-50"
