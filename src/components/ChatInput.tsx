@@ -29,10 +29,14 @@ export const ChatInput: React.FC = () => {
     setIsTyping(e.target.value.length > 0);
   }, []);
 
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (inputText.trim()) {
       addMessage(inputText);
+          // Play sound
+      // const audio = new Audio('./../../public/sounds/send (3).mp3'); // Adjust the path based on where the file is
+      // audio.play();
       setInputText('');
       setIsTyping(false);
     }
@@ -77,7 +81,7 @@ export const ChatInput: React.FC = () => {
 
               {/* //Comment or uncomment the following block to show the user icon */}
               {/* //Comment or uncomment the following block to show the user icon */}
-              {/* <div 
+              <div 
                 className="inline-block px-4 py-2 rounded-3xl rounded-bl-lg bg-opacity-50"
                 style={{ 
                   backgroundColor: colors.bubbleColor,
@@ -94,10 +98,10 @@ export const ChatInput: React.FC = () => {
                 >
                   {inputText}
                 </p>
-              </div> */}
+              </div>
 
               {/* // Uncomment the following block to show typing dots */}
-              <div
+              {/* <div
                 className="inline-block px-4 py-4 rounded-3xl rounded-bl-lg bg-opacity-50"
                 style={{
                   backgroundColor: colors.bubbleColor,
@@ -121,7 +125,7 @@ export const ChatInput: React.FC = () => {
                     aria-hidden
                   />
                 </div>
-              </div>
+              </div> */}
 
             </motion.div>
           )}
